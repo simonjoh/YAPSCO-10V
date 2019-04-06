@@ -1,0 +1,56 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet
+1,Unpolarized capacitor,C,C1 C3 C4 C9,100nF,C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,4,
+2,Polarized capacitor,CP,C5 C13 C14 C15,100uF,CP_Radial_D6.3mm_P2.50mm,4,
+3,Unpolarized capacitor,C,C10 C11 C12,33nF,C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,3,
+4,Unpolarized capacitor,C,C8,360p,C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,1,
+5,Light emitting diode,LED,D3,+12,D_0805_2012Metric_Pad1.15x1.40mm_HandSolder,1,
+6,Light emitting diode,LED,D4,-12,D_0805_2012Metric_Pad1.15x1.40mm_HandSolder,1,
+7,Schottky diode,D_Schottky,D1,1N5819,D_DO-41_SOD81_P10.16mm_Horizontal,1,~
+8,Light emitting diode,LED,D6,LED,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,1,
+9,Light emitting diode,LED,D5,LED 5V,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,1,
+10,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03_Male,K3,FautlPol,PinHeader_1x03_P2.54mm_Vertical,1,
+11,"Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Screw_Terminal_01x03,K1,Supply,TerminalBlock_bornier-3_P5.08mm,1,
+12,Inductor,L,L1,1m,L_Bourns-SRR1005,1,~
+13,"Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Screw_Terminal_01x02,P5,+-10V,TerminalBlock_bornier-2_P5.08mm,1,
+14,"Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_02x05_Odd_Even,P3,CONN,IDC-Header_2x05_P2.54mm_Vertical,1,
+15,"Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Screw_Terminal_01x02,P2,DIR,TerminalBlock_bornier-2_P5.08mm,1,
+16,"Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Screw_Terminal_01x02,P4,ENABLE,TerminalBlock_bornier-2_P5.08mm,1,
+17,"Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",Screw_Terminal_01x04,P6,InOut,TerminalBlock_bornier-4_P5.08mm,1,
+18,"Jumper, 2-pole, open",Jumper_2_Open,P7 P8 P9,Jumper,PinHeader_1x02_P2.54mm_Vertical,3,
+19,"Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Screw_Terminal_01x02,P1,STEP,TerminalBlock_bornier-2_P5.08mm,1,
+20,"NPN transistor, base/emitter/collector",Q_NPN_BEC,Q1,NPN,SOT-23,1,
+21,Resistor,R,R19,100,R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,1,
+22,Resistor,R,R5,10K,R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,1,
+23,Resistor,R,R22 R23 R24,1K,R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,3,
+24,Resistor,R,R29,1K,R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,1,~
+25,Resistor,R,R12 R13 R16,22K,R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,3,
+26,Resistor,R,R1 R2,2K2,R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,2,
+27,Resistor,R,R3 R4 R6 R7 R10,470,R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,5,
+28,Resistor,R,R14 R15,47K,R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,2,
+29,Resistor,R,R8 R9 R11 R25 R26 R27,4K7,R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,6,
+30,Resistor,R,R28,8K6,R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,1,~
+31,Resistor,R,R17 R18 R20 R21,R,R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,4,
+32,Resistor,R,Rsc1 Rsc2 Rsc3,1R,R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,3,~
+33,,6N137,U3 U4 U5,6N137,DIP-8_W7.62mm,3,
+34,Hex inverter schmitt trigger,74HC14,U7,74HC14,SOIC-14_3.9x8.7mm_P1.27mm,1,http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf
+35,"Positive 1A 35V Linear Regulator, Fixed Output 5V, TO-220",LM7805_TO220,U1,7805,TO-220-3_Vertical,1,http://www.fairchildsemi.com/ds/LM/LM7805.pdf
+36,"Positive 1.5A 35V Linear Regulator, Fixed Output 12V, TO-220/TO-263/TO-252",L7812,U9,L7812,TO-220-3_Vertical,1,http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf
+37,"Quad Differential Comparators, DIP-14/SOIC-14/SSOP-14",LM339,U8,LM339D,SOIC-14_3.9x8.7mm_P1.27mm,1,http://www.ti.com/lit/ds/symlink/lm339.pdf
+38,"Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8",LM358,U6,LM358,DIP-8_W7.62mm,1,http://www.ti.com/lit/ds/symlink/lm358.pdf
+39,"1.5A, step-up/down/inverting switching regulator, 3-40V Vin, 100kHz, SO-8",MC33063AD,U10,MC33063AD,SOIC-8_3.9x4.9mm_P1.27mm,1,http://www.onsemi.com/pub_link/Collateral/MC34063A-D.PDF
+40,,DSPIC30F4012-20E_SO,U2,dsPIC30F4012,SOIC-28W_7.5x17.9mm_P1.27mm,1,Microchip
+
+
+
+
+
+Component Groups:,40
+Component Count:,72
+Fitted Components:,72
+Number of PCBs:,1
+Total components:,72
+Schematic Version:,1.0
+Schematic Date:,2019-03-30
+BoM Date:,05-04-2019 17:39:44
+Schematic Source:,E:\OneDrive\Dokumenter\DIY\Projekter\HJF CNC\YAPSC.10V\schema_pcb\current\YAPSCO.sch
+KiCad Version:,Eeschema (5.1.0)-1

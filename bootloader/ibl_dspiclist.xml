@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE devices SYSTEM "ingeniadspicbootloader.dtd">
+<devices>
+	<device id="0x0040" name="dsPIC30F2010" rowsxpage="1">
+		<memcode startaddress="0x000000" endaddress="0x001FFE" instructionxrow="32">
+			<bootloader startaddress="0x001E00" endaddress="0x001FFE"/>
+		</memcode>
+		<memdata startaddress="0x7FFC00" endaddress="0x7FFFFE" instructionxrow="16"/>
+		<memconfig startaddress="0xF80000" endaddress="0xF8000B" instructionxrow="1">
+		</memconfig>
+	</device>
+
+	<device id="0x01C1" name="dsPIC30F3011" rowsxpage="1">
+		<memcode startaddress="0x000000" endaddress="0x003FFE" instructionxrow="32">
+			<bootloader startaddress="0x003E00" endaddress="0x003FFE"/>
+		</memcode>
+		<memdata startaddress="0x7FFC00" endaddress="0x7FFFFE" instructionxrow="16"/>
+		<memconfig startaddress="0xF80000" endaddress="0xF8000B" instructionxrow="1">
+		</memconfig>
+	</device>
+
+	<device id="0x0101" name="dsPIC30F4011" rowsxpage="1">
+		<memcode startaddress="0x000000" endaddress="0x007FFE" instructionxrow="32">
+			<bootloader startaddress="0x007E00" endaddress="0x007FFE"/>
+		</memcode>
+		<memdata startaddress="0x7FFC00" endaddress="0x7FFFFE" instructionxrow="16"/>
+		<memconfig startaddress="0xF80000" endaddress="0xF8000E" instructionxrow="1">
+			<protected startaddress="0xF80000" endaddress="0xF8000E"/>
+		</memconfig>
+	</device>
+	
+	<device id="0x0100" name="dsPIC30F4012" rowsxpage="1">
+		<memcode startaddress="0x000000" endaddress="0x007FFE" instructionxrow="32">
+			<bootloader startaddress="0x007E00" endaddress="0x007FFE"/>
+		</memcode>
+		<memdata startaddress="0x7FFC00" endaddress="0x7FFFFE" instructionxrow="16"/>
+		<memconfig startaddress="0xF80000" endaddress="0xF8000E" instructionxrow="1">
+			<protected startaddress="0xF80000" endaddress="0xF8000E"/>
+		</memconfig>
+	</device>
+
+	<device id="0x0080" name="dsPIC30F5011" rowsxpage="1">
+		<memcode startaddress="0x000000" endaddress="0x00AFFE" instructionxrow="32">
+			<bootloader startaddress="0x00AE00" endaddress="0x00AFFE"/>
+		</memcode>
+		<memdata startaddress="0x7FFC00" endaddress="0x7FFFFE" instructionxrow="16"/>
+		<memconfig startaddress="0xF80000" endaddress="0xF8000B" instructionxrow="1">
+		</memconfig>
+	</device>
+
+	<device id="0x0198" name="dsPIC30F6014" rowsxpage="1">
+		<memcode startaddress="0x000000" endaddress="0x017FFE" instructionxrow="32">
+			<bootloader startaddress="0x017E00" endaddress="0x017FFE"/>
+		</memcode>
+		<memdata startaddress="0x7FF000" endaddress="0x7FFFFE" instructionxrow="16"/>
+		<memconfig startaddress="0xF80000" endaddress="0xF8000B" instructionxrow="1">
+		</memconfig>
+	</device>
+</devices>

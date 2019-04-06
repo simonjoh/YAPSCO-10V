@@ -1,0 +1,258 @@
+# EESchema Netlist Version 1.1 created  1/9/2008-23:12:05
+(
+ ( 48A1819B con-usb-3-USB-B-H  X1 USB-B-H {Lib=USB-B-H}
+  ( VBUS +5V )
+  (   D-  ? )
+  (   D+  ? )
+  (  GND GND )
+ )
+ ( 48A17AEC $noname  P2 Vin {Lib=CONN_2}
+  (    1 GND )
+  (    2 N-000021 )
+ )
+ ( 48A17AE3 $noname  P5 5V_ext {Lib=CONN_2}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( 48A17ADF $noname  P4 5V_ext {Lib=CONN_2}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( 48A17A35 $noname  C4 1uF {Lib=CAPAPOL}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( 48A17A30 $noname  C3 10uF {Lib=CAPAPOL}
+  (    1 N-000021 )
+  (    2 GND )
+ )
+ ( 48A17A24 $noname  P3 Vin {Lib=CONN_2}
+  (    1 GND )
+  (    2 N-000021 )
+ )
+ ( 48A17A10 $noname  U3 7805 {Lib=7805}
+  (   VI N-000021 )
+  (  GND GND )
+  (   VO +5V )
+ )
+ ( 48A1607A $noname  P1 COM_PORT {Lib=CONN_5X2}
+  (    1  ? )
+  (    2  ? )
+  (    3 YAPSC_5V_1 )
+  (    4 YAPSC_GND_1 )
+  (    5 YAPSC_TXD_1 )
+  (    6 YAPSC_RXD_1 )
+  (    7  ? )
+  (    8  ? )
+  (    9  ? )
+  (   10  ? )
+ )
+ ( 489B6825 $noname  U2 PHTRANS {Lib=PHTRANS}
+  (    1 N-000016 )
+  (    2 YAPSC_GND_1 )
+  (    4 TXD_1 )
+  (    5 +5V )
+  (    6  ? )
+ )
+ ( 489B67D7 $noname  U1 PHTRANS {Lib=PHTRANS}
+  (    1 N-000015 )
+  (    2 GND )
+  (    4 YAPSC_RXD_1 )
+  (    5 YAPSC_5V_1 )
+  (    6  ? )
+ )
+ ( 489B4B04 $noname  R2 470 {Lib=R}
+  (    1 N-000016 )
+  (    2 YAPSC_TXD_1 )
+ )
+ ( 489B4B03 $noname  R4 1K {Lib=R}
+  (    1 TXD_1 )
+  (    2 GND )
+ )
+ ( 489B4A78 $noname  R1 470 {Lib=R}
+  (    1 N-000015 )
+  (    2 RXD_1 )
+ )
+ ( 489B4A72 $noname  R3 1K {Lib=R}
+  (    1 YAPSC_RXD_1 )
+  (    2 YAPSC_GND_1 )
+ )
+ ( 489B48F3 $noname  J2 DB9 {Lib=DB9}
+  (    1  ? )
+  (    2 N-000018 )
+  (    3 N-000001 )
+  (    4  ? )
+  (    5 GND )
+  (    6  ? )
+  (    7  ? )
+  (    8  ? )
+  (    9  ? )
+ )
+ ( 489B4745 $noname  C2 10uF {Lib=CAPAPOL}
+  (    1 N-000009 )
+  (    2 N-000012 )
+ )
+ ( 489B4740 $noname  C1 10uF {Lib=CAPAPOL}
+  (    1 N-000008 )
+  (    2 N-000013 )
+ )
+ ( 489B4736 $noname  C5 10uF {Lib=CAPAPOL}
+  (    1 N-000011 )
+  (    2 +5V )
+ )
+ ( 489B472B $noname  C6 10uF {Lib=CAPAPOL}
+  (    1 GND )
+  (    2 N-000010 )
+ )
+ ( 489B4702 $noname  U4 MAX232 {Lib=MAX232}
+  (    1 N-000008 )
+  (    2 N-000011 )
+  (    3 N-000013 )
+  (    4 N-000009 )
+  (    5 N-000012 )
+  (    6 N-000010 )
+  (    7  ? )
+  (    8  ? )
+  (    9  ? )
+  (   10  ? )
+  (   11 TXD_1 )
+  (   12 RXD_1 )
+  (   13 N-000018 )
+  (   14 N-000001 )
+  (   15 GND )
+  (   16 +5V )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C4
+ CP*
+ SM*
+$endlist
+$component C3
+ CP*
+ SM*
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+$endlist
+$component J2
+ DB9*
+$endlist
+$component C2
+ CP*
+ SM*
+$endlist
+$component C1
+ CP*
+ SM*
+$endlist
+$component C5
+ CP*
+ SM*
+$endlist
+$component C6
+ CP*
+ SM*
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 ""
+ J2 3
+ U4 14
+Net 2 "GND"
+ U4 15
+ C4 2
+ C6 1
+ P3 1
+ U3 GND
+ P4 2
+ P5 2
+ J2 5
+ P2 1
+ R4 2
+ U1 2
+ X1 GND
+ C3 2
+Net 3 "YAPSC_RXD_1"
+ P1 6
+ R3 1
+ U1 4
+Net 4 "YAPSC_GND_1"
+ P1 4
+ R3 2
+ U2 2
+Net 5 "YAPSC_TXD_1"
+ R2 2
+ P1 5
+Net 6 "RXD_1"
+ R1 2
+ U4 12
+Net 7 "YAPSC_5V_1"
+ P1 3
+ U1 5
+Net 8 ""
+ C1 1
+ U4 1
+Net 9 ""
+ C2 1
+ U4 4
+Net 10 ""
+ C6 2
+ U4 6
+Net 11 ""
+ C5 1
+ U4 2
+Net 12 ""
+ C2 2
+ U4 5
+Net 13 ""
+ C1 2
+ U4 3
+Net 14 "TXD_1"
+ U2 4
+ U4 11
+ R4 1
+Net 15 ""
+ U1 1
+ R1 1
+Net 16 ""
+ R2 1
+ U2 1
+Net 17 "+5V"
+ X1 VBUS
+ U2 5
+ C5 2
+ P5 1
+ P4 1
+ U4 16
+ U3 VO
+ C4 1
+Net 18 ""
+ J2 2
+ U4 13
+Net 21 ""
+ U3 VI
+ P3 2
+ P2 2
+ C3 1
+}
+#End

@@ -1,0 +1,150 @@
+Cmp-Mod V01 Created by Cvpcb (2007-07-09) date = 18/8/2008-14:03:21
+
+BeginCmp
+TimeStamp = 489B4740;
+Reference = C1;
+ValeurCmp = 10uF;
+IdModule  = C2V8;
+EndCmp
+
+BeginCmp
+TimeStamp = 489B4745;
+Reference = C2;
+ValeurCmp = 10uF;
+IdModule  = C2V8;
+EndCmp
+
+BeginCmp
+TimeStamp = 48A17A30;
+Reference = C3;
+ValeurCmp = 10uF;
+IdModule  = C2V8;
+EndCmp
+
+BeginCmp
+TimeStamp = 48A17A35;
+Reference = C4;
+ValeurCmp = 1uF;
+IdModule  = C2V8;
+EndCmp
+
+BeginCmp
+TimeStamp = 489B4736;
+Reference = C5;
+ValeurCmp = 10uF;
+IdModule  = C2V8;
+EndCmp
+
+BeginCmp
+TimeStamp = 489B472B;
+Reference = C6;
+ValeurCmp = 10uF;
+IdModule  = C2V8;
+EndCmp
+
+BeginCmp
+TimeStamp = 489B48F3;
+Reference = J2;
+ValeurCmp = DB9;
+IdModule  = connect-D-09F/90;
+EndCmp
+
+BeginCmp
+TimeStamp = 48A1607A;
+Reference = P1;
+ValeurCmp = COM_PORT;
+IdModule  = connect-LH-10;
+EndCmp
+
+BeginCmp
+TimeStamp = 48A17AEC;
+Reference = P2;
+ValeurCmp = Vin;
+IdModule  = connect-PAD-02;
+EndCmp
+
+BeginCmp
+TimeStamp = 48A17A24;
+Reference = P3;
+ValeurCmp = Vin;
+IdModule  = divers-MA02-1;
+EndCmp
+
+BeginCmp
+TimeStamp = 48A17ADF;
+Reference = P4;
+ValeurCmp = 5V_ext;
+IdModule  = divers-MA02-1;
+EndCmp
+
+BeginCmp
+TimeStamp = 48A17AE3;
+Reference = P5;
+ValeurCmp = 5V_ext;
+IdModule  = connect-PAD-02;
+EndCmp
+
+BeginCmp
+TimeStamp = 489B4A78;
+Reference = R1;
+ValeurCmp = 470;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = 489B4B04;
+Reference = R2;
+ValeurCmp = 470;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = 489B4A72;
+Reference = R3;
+ValeurCmp = 1K;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = 489B4B03;
+Reference = R4;
+ValeurCmp = 1K;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = 489B67D7;
+Reference = U1;
+ValeurCmp = PHTRANS;
+IdModule  = 6DIP-ELL300;
+EndCmp
+
+BeginCmp
+TimeStamp = 489B6825;
+Reference = U2;
+ValeurCmp = PHTRANS;
+IdModule  = 6DIP-ELL300;
+EndCmp
+
+BeginCmp
+TimeStamp = 48A17A10;
+Reference = U3;
+ValeurCmp = 7805;
+IdModule  = LM78LXX;
+EndCmp
+
+BeginCmp
+TimeStamp = 489B4702;
+Reference = U4;
+ValeurCmp = MAX232;
+IdModule  = 16DIP-ELL300;
+EndCmp
+
+BeginCmp
+TimeStamp = 48A1819B;
+Reference = X1;
+ValeurCmp = USB-B-H;
+IdModule  = con-usb-3-USB-B-H;
+EndCmp
+
+EndListe

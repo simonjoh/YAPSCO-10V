@@ -1,0 +1,178 @@
+EESchema Schematic File Version 4
+LIBS:YAPSCO-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title "YAPSCO:10V"
+Date "2019-03-30"
+Rev "1.0"
+Comp ""
+Comment1 "Onboard -12V supply"
+Comment2 "Modifications in components and layout from the original YAPSC:10V by MaX-MoD"
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6050 1900 5450 1900
+Wire Wire Line
+	5450 1550 6050 1550
+Wire Wire Line
+	5450 1000 6050 1000
+Wire Wire Line
+	5450 2800 6050 2800
+Wire Wire Line
+	2250 2100 2850 2100
+Wire Wire Line
+	2250 1900 2850 1900
+Wire Wire Line
+	2250 1450 2850 1450
+Wire Wire Line
+	2250 1150 2850 1150
+Wire Wire Line
+	2850 1250 2250 1250
+Wire Wire Line
+	2850 1800 2250 1800
+Wire Wire Line
+	2850 2200 2250 2200
+Wire Wire Line
+	2850 1650 2250 1650
+Wire Wire Line
+	5450 2700 6050 2700
+Wire Wire Line
+	5450 2900 6050 2900
+Wire Wire Line
+	6050 1100 5450 1100
+Wire Wire Line
+	5450 1650 6050 1650
+$Sheet
+S 6050 2550 1550 1000
+U 494FFD7B
+F0 "Encoder" 60
+F1 "Encoder.sch" 60
+F2 "AN2" I R 7600 3350 60 
+F3 "SCK" I R 7600 3250 60 
+F4 "SDA" I R 7600 3150 60 
+F5 "SCL" I R 7600 3050 60 
+F6 "SDO" I R 7600 2850 60 
+F7 "SDI" O R 7600 2950 60 
+F8 "QEA" O L 6050 2700 60 
+F9 "INDX" O L 6050 2900 60 
+F10 "QEB" O L 6050 2800 60 
+$EndSheet
+$Sheet
+S 6050 800  1550 1500
+U 49402687
+F0 "InterfaceDriver" 60
+F1 "InterfaceDriver.sch" 60
+F2 "Neg" I L 6050 1100 60 
+F3 "Pos" I L 6050 1000 60 
+F4 "IN1" O L 6050 1650 60 
+F5 "FLTA" O L 6050 1900 60 
+F6 "OUT1" I L 6050 1550 60 
+$EndSheet
+$Sheet
+S 800  5900 2050 1400
+U 4940266E
+F0 "SupplyCircuit" 60
+F1 "SupplyCircuit.sch" 60
+$EndSheet
+$Sheet
+S 2850 800  2600 2850
+U 49402670
+F0 "dsPIC" 60
+F1 "dsPIC.sch" 60
+F2 "PWM_H_B" O R 5450 1100 60 
+F3 "PWM_H_A" O R 5450 1000 60 
+F4 "MCLR" I L 2850 1450 60 
+F5 "DIR" I L 2850 1150 60 
+F6 "STEP" I L 2850 1250 60 
+F7 "TX" O L 2850 1800 60 
+F8 "RX" I L 2850 1900 60 
+F9 "PGD" I L 2850 2100 60 
+F10 "PGC" I L 2850 2200 60 
+F11 "INDX" I R 5450 2900 60 
+F12 "QEB" I R 5450 2800 60 
+F13 "QEA" I R 5450 2700 60 
+F14 "ENABLE" I L 2850 1650 60 
+F15 "FLTA" I R 5450 1900 60 
+F16 "IN1" I R 5450 1650 60 
+F17 "OUT1" O R 5450 1550 60 
+$EndSheet
+$Sheet
+S 800  800  1450 1750
+U 49402674
+F0 "MotionControllerInput" 60
+F1 "MotionControllerInput.sch" 60
+F2 "ENABLE" O R 2250 1650 60 
+F3 "DIR" O R 2250 1150 60 
+F4 "STEP" O R 2250 1250 60 
+F5 "RXD" O R 2250 1900 60 
+F6 "TXD" O R 2250 1800 60 
+F7 "MCLR" O R 2250 1450 60 
+F8 "PGD" I R 2250 2100 60 
+F9 "PGC" I R 2250 2200 60 
+$EndSheet
+NoConn ~ 7600 2850
+NoConn ~ 7600 2950
+NoConn ~ 7600 3050
+NoConn ~ 7600 3150
+NoConn ~ 7600 3250
+NoConn ~ 7600 3350
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5CAD7FB6
+P 10350 750
+F 0 "H1" H 10450 796 50  0000 L CNN
+F 1 "MountingHole" H 10450 705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 10350 750 50  0001 C CNN
+F 3 "~" H 10350 750 50  0001 C CNN
+	1    10350 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5CAD8F14
+P 10350 950
+F 0 "H2" H 10450 996 50  0000 L CNN
+F 1 "MountingHole" H 10450 905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 10350 950 50  0001 C CNN
+F 3 "~" H 10350 950 50  0001 C CNN
+	1    10350 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5CAD9374
+P 10350 1150
+F 0 "H3" H 10450 1196 50  0000 L CNN
+F 1 "MountingHole" H 10450 1105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 10350 1150 50  0001 C CNN
+F 3 "~" H 10350 1150 50  0001 C CNN
+	1    10350 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5CAD94FD
+P 10350 1350
+F 0 "H4" H 10450 1396 50  0000 L CNN
+F 1 "MountingHole" H 10450 1305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 10350 1350 50  0001 C CNN
+F 3 "~" H 10350 1350 50  0001 C CNN
+	1    10350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small #LOGO1
+U 1 1 5CA62153
+P 6600 7450
+F 0 "#LOGO1" H 6600 7744 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 6600 7225 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_7.3x6mm_Copper" H 6600 7450 50  0001 C CNN
+F 3 "~" H 6600 7450 50  0001 C CNN
+	1    6600 7450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

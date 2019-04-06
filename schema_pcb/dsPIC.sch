@@ -1,0 +1,215 @@
+EESchema Schematic File Version 4
+LIBS:YAPSCO-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title "YAPSCO:10V"
+Date "2019-03-30"
+Rev "A.1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	9500 2800 9700 2800
+Wire Wire Line
+	2900 2900 2600 2900
+Wire Wire Line
+	2600 3000 2900 3000
+Wire Wire Line
+	9500 2500 9700 2500
+Wire Wire Line
+	2900 3300 2600 3300
+Connection ~ 1850 2500
+Wire Wire Line
+	2900 2500 1850 2500
+Wire Wire Line
+	1800 3100 1700 3100
+Wire Wire Line
+	9700 3500 9500 3500
+Wire Wire Line
+	1350 3150 1350 3100
+Wire Wire Line
+	1350 3100 1400 3100
+Wire Wire Line
+	9700 2400 9500 2400
+Wire Wire Line
+	9500 3300 9700 3300
+Wire Wire Line
+	9500 3100 9700 3100
+Wire Wire Line
+	2800 2100 2800 2200
+Wire Wire Line
+	2800 2200 2900 2200
+Wire Wire Line
+	1850 2500 1850 2450
+Wire Wire Line
+	9500 2200 9650 2200
+Wire Wire Line
+	9700 3400 9500 3400
+Wire Wire Line
+	2900 3100 2100 3100
+Wire Wire Line
+	2900 3200 2600 3200
+Wire Wire Line
+	2900 3400 2600 3400
+Wire Wire Line
+	9500 2600 9700 2600
+Wire Wire Line
+	2900 2700 2600 2700
+Text HLabel 9700 2800 2    60   Output ~ 0
+OUT1
+Text HLabel 2600 2700 0    60   Input ~ 0
+FLTA
+Text HLabel 2600 2900 0    60   Input ~ 0
+IN1
+Text HLabel 2600 3000 0    60   Input ~ 0
+ENABLE
+Text HLabel 9700 2600 2    60   Input ~ 0
+PGD
+Text HLabel 9700 2500 2    60   Input ~ 0
+PGC
+Text HLabel 2600 3200 0    60   Input ~ 0
+INDX
+Text HLabel 2600 3400 0    60   Input ~ 0
+QEB
+Text HLabel 2600 3300 0    60   Input ~ 0
+QEA
+Text HLabel 1600 2500 0    60   Input ~ 0
+MCLR
+$Comp
+L Device:R R4
+U 1 1 489C10E9
+P 1950 3100
+F 0 "R4" V 2030 3100 50  0000 C CNN
+F 1 "470" V 1950 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1950 3100 50  0001 C CNN
+F 3 "" H 1950 3100 50  0001 C CNN
+	1    1950 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR056
+U 1 1 489B535E
+P 1350 3150
+F 0 "#PWR056" H 1350 3150 30  0001 C CNN
+F 1 "GND" H 1350 3080 30  0001 C CNN
+F 2 "" H 1350 3150 50  0001 C CNN
+F 3 "" H 1350 3150 50  0001 C CNN
+	1    1350 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 489B5353
+P 1550 3100
+F 0 "D6" H 1550 3200 50  0000 C CNN
+F 1 "LED" H 1550 3000 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1550 3100 50  0001 C CNN
+F 3 "" H 1550 3100 50  0001 C CNN
+	1    1550 3100
+	1    0    0    1   
+$EndComp
+Text HLabel 9700 2400 2    60   Input ~ 0
+DIR
+Text HLabel 9650 2200 2    60   Input ~ 0
+STEP
+Text HLabel 9700 3500 2    60   Output ~ 0
+TX
+Text HLabel 9700 3400 2    60   Input ~ 0
+RX
+Text HLabel 9700 3300 2    60   Output ~ 0
+PWM_H_B
+Text HLabel 9700 3100 2    60   Output ~ 0
+PWM_H_A
+$Comp
+L Device:R R5
+U 1 1 489B36DB
+P 1850 2300
+F 0 "R5" V 1930 2300 50  0000 C CNN
+F 1 "10K" V 1850 2300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1850 2300 50  0001 C CNN
+F 3 "" H 1850 2300 50  0001 C CNN
+	1    1850 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR057
+U 1 1 489B36CA
+P 1850 2150
+F 0 "#PWR057" H 1850 2240 20  0001 C CNN
+F 1 "+5V" H 1850 2300 30  0000 C CNN
+F 2 "" H 1850 2150 50  0001 C CNN
+F 3 "" H 1850 2150 50  0001 C CNN
+	1    1850 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR058
+U 1 1 489B36C4
+P 2800 2100
+F 0 "#PWR058" H 2800 2190 20  0001 C CNN
+F 1 "+5V" H 2800 2250 30  0000 C CNN
+F 2 "" H 2800 2100 50  0001 C CNN
+F 3 "" H 2800 2100 50  0001 C CNN
+	1    2800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR061
+U 1 1 489B369A
+P 2650 4050
+F 0 "#PWR061" H 2650 4050 30  0001 C CNN
+F 1 "GND" H 2650 3980 30  0001 C CNN
+F 2 "" H 2650 4050 50  0001 C CNN
+F 3 "" H 2650 4050 50  0001 C CNN
+	1    2650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L DSPIC30F4012-20E_SO:DSPIC30F4012-20E_SO U2
+U 1 1 489B35AA
+P 6200 3000
+F 0 "U2" H 6200 2900 50  0000 C CNN
+F 1 "dsPIC30F4012" H 6200 3100 50  0000 C CNN
+F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 6200 3000 50  0001 C CNN
+F 3 "" H 6200 3000 50  0001 C CNN
+	1    6200 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2500 1600 2500
+Wire Wire Line
+	2650 4050 2650 4000
+Wire Wire Line
+	2650 3900 2900 3900
+NoConn ~ 2900 3500
+NoConn ~ 2900 3600
+Wire Wire Line
+	2800 2200 2800 2300
+Wire Wire Line
+	2800 2400 2900 2400
+Connection ~ 2800 2200
+Wire Wire Line
+	2800 2300 2900 2300
+Connection ~ 2800 2300
+Wire Wire Line
+	2800 2300 2800 2400
+Wire Wire Line
+	2650 4000 2900 4000
+Connection ~ 2650 4000
+Wire Wire Line
+	2650 4000 2650 3900
+NoConn ~ 9500 2900
+NoConn ~ 9500 3000
+NoConn ~ 9500 3200
+Wire Wire Line
+	2650 3900 2650 3800
+Wire Wire Line
+	2650 3800 2900 3800
+Connection ~ 2650 3900
+$EndSCHEMATC

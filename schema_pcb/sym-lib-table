@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name DSPIC30F4012-20E_SO)(type Legacy)(uri ${KIPRJMOD}/libs/DSPIC30F4012-20E_SO.lib)(options "")(descr ""))
+  (lib (name optocoupler-2)(type Legacy)(uri ${KIPRJMOD}/libs/optocoupler-2.lib)(options "")(descr ""))
+)

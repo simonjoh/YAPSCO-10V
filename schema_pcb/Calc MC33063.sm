@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.7030.1435"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="120">
+    <identity>
+      <id>4518062c-fad3-4017-9363-0e8236aebda1</id>
+      <revision>13</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.7030.1435" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.99.7030.1435" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="TextRegion" version="1.11.7030.1435" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region id="0" left="0" top="0" width="464" height="34" color="#000000" bgColor="#ffffff" fontSize="16">
+      <text lang="dan">
+        <p>Component calculation -12V circuit</p>
+      </text>
+    </region>
+    <region id="1" left="0" top="45" width="441" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="dan">
+        <p>MC33063 datasheet
+https://www.onsemi.com/pub/Collateral/MC34063A-D.PDF</p>
+      </text>
+    </region>
+    <region id="2" left="0" top="90" width="299" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="dan">
+        <p>MC33063 used as inverting converter
+Formulas on page 11</p>
+      </text>
+    </region>
+    <region id="3" left="9" top="144" width="78" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.in</e>
+          <e type="operand">12</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="4" left="297" top="144" width="80" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.F</e>
+          <e type="operand">0.9</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="5" left="441" top="144" width="209" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="dan">
+        <p>Forward voltage of diode</p>
+      </text>
+    </region>
+    <region id="6" left="9" top="171" width="104" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.in.min</e>
+          <e type="operand">12</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="7" left="297" top="171" width="77" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.sat</e>
+          <e type="operand">1</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="8" left="441" top="171" width="298" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="dan">
+        <p>Saturation voltage of output switch</p>
+      </text>
+    </region>
+    <region id="9" left="9" top="207" width="97" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.out</e>
+          <e type="operand">12</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="10" left="9" top="252" width="82" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">f</e>
+          <e type="operand">65</e>
+          <e type="operand" style="unit">kHz</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="11" left="9" top="279" width="118" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">I.out.max</e>
+          <e type="operand">0.2</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="12" left="9" top="306" width="139" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math optimize="2">
+        <input>
+          <e type="operand">V.ripple.pp</e>
+          <e type="operand">200</e>
+          <e type="operand" style="unit">mV</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="13" left="9" top="378" width="219" height="55" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">t.ratio</e>
+          <e type="operand">V.out</e>
+          <e type="function" args="1">abs</e>
+          <e type="operand">V.F</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">V.in</e>
+          <e type="operand">V.sat</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.1727</e>
+        </result>
+      </math>
+    </region>
+    <region id="14" left="9" top="441" width="150" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">t.s</e>
+          <e type="operand">1</e>
+          <e type="operand">f</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">μs</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">15.3846</e>
+        </result>
+      </math>
+    </region>
+    <region id="15" left="450" top="459" width="113" height="75" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">t.on.opt</e>
+          <e type="operand">0</e>
+          <e type="operand">t.s</e>
+          <e type="operand">t.on</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="16" left="9" top="486" width="211" height="53" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">t.off</e>
+          <e type="operand">t.s</e>
+          <e type="operand">t.ratio</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">μs</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">7.0808</e>
+        </result>
+      </math>
+    </region>
+    <region id="17" left="9" top="540" width="193" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">t.on</e>
+          <e type="operand">t.s</e>
+          <e type="operand">t.off</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">μs</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">8.3038</e>
+        </result>
+      </math>
+    </region>
+    <region id="18" left="450" top="540" width="92" height="30" color="#000000" bgColor="#7bd2fd" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">t.on.max</e>
+          <e type="operand">t.s</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="19" left="9" top="576" width="228" height="42" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">C.T</e>
+          <e type="operand">4</e>
+          <e type="operand">10</e>
+          <e type="operand">5</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">F</e>
+          <e type="operand" style="unit">s</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">t.on</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">nF</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">0.3322</e>
+        </result>
+      </math>
+    </region>
+    <region id="20" left="9" top="621" width="339" height="32" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">I.pk.switch</e>
+          <e type="operand">2</e>
+          <e type="operand">I.out.max</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">t.ratio</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.8691</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="21" left="9" top="693" width="209" height="47" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">R.sc</e>
+          <e type="operand">0.3</e>
+          <e type="operand" style="unit">A</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">Ω</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">I.pk.switch</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.3452</e>
+          <e type="operand" style="unit">Ω</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="22" left="9" top="747" width="304" height="55" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">L.min</e>
+          <e type="operand">V.in.min</e>
+          <e type="operand">V.sat</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">I.pk.switch</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operand">t.on.max</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mH</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">0.1947</e>
+        </result>
+      </math>
+    </region>
+    <region id="23" left="9" top="810" width="240" height="53" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">C.O</e>
+          <e type="operand">9</e>
+          <e type="operand">I.out.max</e>
+          <e type="operand">t.on</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">V.ripple.pp</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">μF</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">74.7345</e>
+        </result>
+      </math>
+    </region>
+    <region id="24" left="0" top="891" width="160" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="dan">
+        <p>Feedback resistors</p>
+      </text>
+    </region>
+    <region id="25" left="9" top="927" width="72" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">R.1</e>
+          <e type="operand">1</e>
+          <e type="operand" style="unit">kΩ</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="26" left="369" top="936" width="120" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">R.2.test</e>
+          <e type="operand">8660</e>
+          <e type="operand" style="unit">Ω</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="27" left="9" top="954" width="222" height="51" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">R.2</e>
+          <e type="operand">V.out</e>
+          <e type="function" args="1">abs</e>
+          <e type="operand">1.25</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">R.1</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">8600</e>
+          <e type="operand" style="unit">Ω</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region id="28" left="369" top="981" width="293" height="55" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.out.test</e>
+          <e type="operand">1.25</e>
+          <e type="operand">R.2.test</e>
+          <e type="operand">R.1</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">12.075</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>

@@ -1,0 +1,17 @@
+ERC report (31-03-2019 21:01:25, Encoding UTF8 )
+
+***** Sheet /
+
+***** Sheet /Encoder/
+
+***** Sheet /InterfaceDriver/
+
+***** Sheet /SupplyCircuit/
+ErrType(3): Pin connected to some others pins but no pin to drive it
+    @ (77,47 mm,72,39 mm): Pin 1 (Power input) of component #PWR052 is not driven (Net 23).
+
+***** Sheet /dsPIC/
+
+***** Sheet /MotionControllerInput/
+
+ ** ERC messages: 1  Errors 0  Warnings 1
