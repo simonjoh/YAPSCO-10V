@@ -11,9 +11,9 @@ The board has the same outer dimensions and mounting hole positions as YAPSC:10V
 ## Schematic and PCB
 Most of the schematic symbols have been updated with new ones from Kicad's library.
 
-Some PCB footprints have been replaced with surface mounted versions to be able to squash in the -12V supply while keeping the board outline and mounting holes in the same location as YAPSC:10V.
+Some PCB footprints have been replaced with surface mounted versions to be able to squash in the -12V supply while keeping the board outline and mounting holes the same as YAPSC:10V.
 
-The DB15 connector footprint has also been added to the PCB layout so that it can be easily soldered onto the board if needed.
+The DB15 connector footprint has also been added to the PCB layout so that it can easily be soldered onto the board if needed.
 
 The PCB now includes a DC-DC voltage inverter set to -12V, but can be adjusted as necessary with 2 feedback resistors (R28, R29). Component values for the DC-DC converter can be calculated with the SMath sheet "Calc MC33063.sm".
 
@@ -23,4 +23,4 @@ The firmware has not been modified and connectors are generally kept in the orig
 
 
 ## Disclaimer
-The board is being manufactured and therefore have not been tested yet. The only thing I have tested, is the DC-DC controller on a breadboard, but since everything has mainly been kept as the original so it should just work right out of the box, right? :)
+The board is being manufactured and therefore have not been tested yet. The only thing I have tested, is the DC-DC controller on a breadboard, but since everything has mainly been kept as the original it should just work right out of the box, right? :)
